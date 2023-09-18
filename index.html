@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="color-scheme" content="only light">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+<style>
+    :root {
+        color-scheme: light dark; /* both supported */
+    }
+
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background: white;
+    }
+
+    .rect {
+        box-sizing: border-box;
+        padding-top: 80px;
+        color: black;
+        /* position: absolute; */
+        z-index: 1000;
+        left: 0;
+        width: 100%;
+        top: 0;
+        height: 218px;
+        background: var(--2, linear-gradient(180deg, rgba(235, 87, 249, 0.12) 71.49%, rgba(235, 87, 249, 0.05) 85.85%, rgba(235, 87, 249, 0.01) 99.61%), #FCFFFC);
+        border-radius: 0px 0px 20px 20px;
+    }
+
+
+    .title {
+        font-family: 'Montserrat';
+        color: #303030;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120.182%; /* 38.458px */
+        text-transform: uppercase;
+    }
+    .subtitle {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 49px;
+        color: #F4F4F4;
+        padding: 0 21px;
+    }
+    .logo {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        padding: 21px 0 0 21px;
+    }
+
+    .logo_text {
+        padding-left: 8px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        color: #F4F4F4;
+    }
+
+    @media only screen and (max-width: 380px){
+        .title {
+            font-size: 32px;
+            padding-top: 20px;
+        }
+        .subtitle {
+            font-size: 30px;
+        }
+    }
+
+    #_lg_form_{
+        margin-top: -195px;
+        padding-top: 194px;
+    }
+</style>
+
+<header>
+    <div class="rect">
+        <div class="title">Fill out the form to get a loan</div>
+    </div>
+</header>
+
+<div id="_lg_form_"></div>
+<script type="text/javascript">var _lg_form_init_ = {    aid: "15921",    template: "elvis-us"};</script>
+<script type="text/javascript" async="true" src="https://loansaccount.com/form/applicationInit.js"></script>
+<script>
+        var formElement = document.getElementById('_lg_form_');
+
+        var isLoadingState = true;
+
+        var appendStylesToNode = function (el) {
+            var style = document.createElement( 'style' )
+            style.innerHTML = `
+                #wallet-lines {
+                    padding-top: 200px!important;
+                }
+
+                body #wallet-lines .terms {
+                    display: none!important;
+                }
+
+                #id_page_three-step-1 > p {
+                    display: none;
+                }
+
+                .v4Wl9l {
+                    --dKS8Hz: #E32D57;
+                    --iwhx97: #e64c6f;
+                }
+
+
+                .vKStjR:before {
+                    background: #E32D57;
+                    filter: none;
+                }
+
+                .yklyQI { 
+                    background: #E32D57
+                }
+                
+                
+
+
+                :host {
+                    --sSfi5j: #EB57F9;
+                    --Zl8k6Q: #EB57F9;
+                    --OXBgjw: #EB57F9;
+                    --KlqX6o: #f48bfc;
+                    --MHOg34: #EB57F9;
+                    --sokbLm: #EB57F9;
+
+                    /* text */
+                    --p56nIo: #EB57F9;
+                    --wuVwFM: #EB57F9;
+
+                    /* button text */
+                    --gubMOW: #fff;
+                }
+
+                .DsTGwu {
+                    /* text tac */
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .srmByI .pFjoYX:last-child {
+                    /* svg */
+                    display: none;
+                }
+
+                .RaKTny.qVbtzo .zLlFzE.kGS4qK:before {
+                    /* list active */
+                    background: #FADBFD;
+                    z-index: 0;
+                }
+            `
+            el.appendChild(style)
+        }
+
+        var afterFormInitCallback = function() {
+            if (isLoadingState) {
+                // skip first rendering because it's loading
+                isLoadingState = false;
+                return;
+            }
+            if (formElement.firstChild && formElement.firstChild.shadowRoot) {
+                appendStylesToNode(formElement.firstChild.shadowRoot)
+            }
+        };
+        var observer = new MutationObserver(afterFormInitCallback);
+        observer.observe(formElement, {
+            attributes: true,
+            childList: true,
+            subtree: true
+        });
+</script>
+</body>
+</html>
