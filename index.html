@@ -13,84 +13,83 @@
 </head>
 <body id="body">
 <style>
-    :root {
-        color-scheme: light dark; /* both supported */
-    }
+  :root {
+    color-scheme: light dark; /* both supported */
+  }
 
-    html, body {
-        padding: 0;
-        margin: 0;
-    }
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
 
-    header {
-        background: white;
-    }
+  header {
+    background: white;
+  }
 
-    .rect {
+.rect {
         box-sizing: border-box;
-        padding-top: 80px;
+        padding-top: 20px;
         color: black;
         /* position: absolute; */
         z-index: 1000;
         left: 0;
         width: 100%;
         top: 0;
-        height: 218px;
-        background: var(--2, linear-gradient(180deg, rgba(235, 87, 249, 0.12) 71.49%, rgba(235, 87, 249, 0.05) 85.85%, rgba(235, 87, 249, 0.01) 99.61%), #FCFFFC);
-        border-radius: 0px 0px 20px 20px;
+        height: 175px;
+        /* background: var(--2, linear-gradient(180deg, rgba(236, 30, 255, 0.12) 80.93%, rgba(235, 87, 249, 0.05) 94.05%, rgba(235, 87, 249, 0.01) 100%), #FFF); */
+        background: var(--2, linear-gradient(180deg, rgba(236, 30, 255, 0.12) 74.23%, rgba(238, 54, 255, 0.05) 87.5%, rgba(255, 255, 255, 0.01) 100%), #FFF);
     }
 
+  .title {
+    font-family: 'Montserrat';
+    color: #303030;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120.182%; /* 38.458px */
+    text-transform: uppercase;
+  }
+  .subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #F4F4F4;
+    padding: 0 21px;
+  }
+  .logo {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 21px 0 0 21px;
+  }
 
+  .logo_text {
+    padding-left: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #F4F4F4;
+  }
+
+  @media only screen and (max-width: 380px){
     .title {
-        font-family: 'Montserrat';
-        color: #303030;
-        text-align: center;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 120.182%; /* 38.458px */
-        text-transform: uppercase;
+      font-size: 32px;
+      padding-top: 20px;
     }
     .subtitle {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 49px;
-        color: #F4F4F4;
-        padding: 0 21px;
+      font-size: 30px;
     }
-    .logo {
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
-        padding: 21px 0 0 21px;
-    }
+  }
 
-    .logo_text {
-        padding-left: 8px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 11px;
-        line-height: 13px;
-        color: #F4F4F4;
-    }
-
-    @media only screen and (max-width: 380px){
-        .title {
-            font-size: 32px;
-            padding-top: 20px;
-        }
-        .subtitle {
-            font-size: 30px;
-        }
-    }
-
-    #_lg_form_{
-        margin-top: -195px;
-        padding-top: 194px;
-    }
+  #_lg_form_{
+    margin-top: -195px;
+    padding-top: 194px;
+  }
 </style>
 
 <header>
